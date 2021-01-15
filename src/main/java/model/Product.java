@@ -3,20 +3,23 @@ package model;
 public class Product {
     private int id;
     private String name;
-    private String prime;
+    private String price;
     private String quantity;
     private String color;
     private String status;
-    private String categoryId;
+    private String category;
 
-    public Product(int id, String name, String prime, String quantity, String color, String status, String categoryId) {
+    public Product(int id, String name, String price, String quantity, String color, String status, String category) {
         this.id = id;
         this.name = name;
-        this.prime = prime;
+        this.price = price;
         this.quantity = quantity;
         this.color = color;
         this.status = status;
-        this.categoryId = categoryId;
+        this.category = category;
+    }
+
+    public Product(String name, String prime, String quantity, String color, String status, String category) {
     }
 
     public int getId() {
@@ -35,12 +38,12 @@ public class Product {
         this.name = name;
     }
 
-    public String getPrime() {
-        return prime;
+    public String getPrice() {
+        return price;
     }
 
-    public void setPrime(String prime) {
-        this.prime = prime;
+    public void setPrice(String price) {
+        this.price = price;
     }
 
     public String getQuantity() {
@@ -67,11 +70,11 @@ public class Product {
         this.status = status;
     }
 
-    public String getCategoryId() {
-        return categoryId;
+    public String getCategory() {
+        return category;
     }
 
-    public void setCategoryId(String categoryId) {
-        this.categoryId = categoryId;
+    public void setCategory(String category) {
+        this.category = category;
     }
 }

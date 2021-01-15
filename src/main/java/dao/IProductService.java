@@ -13,7 +13,8 @@ public interface IProductService {
 
     boolean deleteProduct(int id);
 
-    List<Product> searchProductById(int id);
+    Product searchProductById(int id);
 
-    List<Product> searchProductByName(String name);
+    Product searchProductByName(String name);
+
 }
